@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1,target-densitydpi=medium-dpi"/>
+		<meta name="format-detection" content="telephone=no" />
+		<title>四喜和胡萝卜</title>
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<style>
+			body{padding:0; margin:0; text-align:center}
+			.content{width:100%; height:100%; display:block; font-size:72px;}
+			canvas{display: block;}
+			.info{height:30px;}
+			.info strong{color:#eb6100; font-size:14px; font-family: "微软雅黑";text-align: left; line-height: 30px;}
+			#score{width:144px; height:38px; position:fixed; top:40%; left:50%; margin-left:-72px;display: none; }
+			.score1{background:url("img/score.png") no-repeat 0 0;}
+			.score2{background:url("img/score2.png") no-repeat 0 0;}
+			.score3{background:url("img/score3.png") no-repeat 0 0;}
+			#replay{width:58%; height:130px; background-color: #facce0; position: fixed; top:30%; left:21%;  border-radius: 10px; box-shadow: 0px 0px 18px #E24A7F; display: none;}
+			#replay span{color:#fff; width:100%; text-align: center; line-height: 40px; font-size: 22px; font-family: "微软雅黑";}
+			#replay p{margin:0;font-size:18px;font-family: "微软雅黑"; color:#666;}
+			#replay .finalScore{color:#12ADA7;}
+			.reply_btn{background-color: #e24a7f; width:120px; height:30px; line-height: 30px; text-align: center; margin:0 auto;color:#fff; font-size:16px; margin-top: 5px; font-family: "微软雅黑"; border-radius: 5px; border:1px dashed #fff;}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div id="score"></div>
+			<canvas id="bunny" width="480" height="800"></canvas>
+		</div>
+		<div class="info">
+			四喜位置：<strong id="sxX">195</strong> + <strong id="sxY">670</strong> 
+			胡萝卜数:<strong id="carrots">0</strong>
+		</div>
+		<div id="replay">
+			<span>GAME OVER!</span>
+			<p>SCORE:&nbsp;<span class="finalScore"></span></p>
+			<div class="reply_btn">PLAY AGAIN</div>
+		</div>
+		<script type="text/javascript" src="js/littlebunny.js"></script>
+	</body>
+</html>
